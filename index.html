@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <title>PROFICIENCY Project</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #1a1a1a;
+      --accent: #0057ff;
+      --card-bg: #fff;
+      --border: #e0e0e0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2vh 2rem;
+      line-height: 1.6;
+    }
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+
+    .logo img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    .site-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--accent);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    section {
+      max-width: 870px;
+      width: 100%;
+      background: var(--card-bg);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+
+    h1,
+    h2 {
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    p,
+    ul {
+      margin: 0 0 1rem 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin: 20px;
+      background: #fff;
+      color: var(--accent);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s ease-in-out;
+      border-radius: 6px;
+      border: 1px solid var(--accent);
+    }
+
+    .button:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: nowrap;
+      margin: 40px 0;
+    }
+
+    .logo-row img {
+      height: 95px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .logo-small img {
+      max-width: 500px;
+      /* Adjust the size as needed */
+      height: auto;
+      margin: 0 auto;
+      /* Ensures the image is centered */
+      display: block;
+      /* Required for margin auto to work */
+
+    }
+
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logos img {
+      max-height: 500px;
+      object-fit: contain;
+    }
+
+    .authors {
+      text-align: center;
+      max-width: 800px;
+      width: 100%;
+      background: none;
+      padding: 0rem;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.00);
+      border: 0px solid var(--border);
+    }
+  
+    .authors h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+  
+    .author-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      justify-items: center;
+    }
+  
+    .author-list div {
+      background: var(--card-bg);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .authors,
+    .affiliations {
+      margin-bottom: 2em;
+    }
+
+    .authors span {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="images/Logo.avif" alt="Proficiency" />
+  </div>
+  <div class="site-title">Enhancing Orthopedic Surgical Training With<br> Interactive
+    Photorealistic 3D Visualization</div>
+
+  <section class="authors">
+      <!-- <h2>Authors</h2> -->
+      <p>
+        <span>Roni Lekar<sup>*1</sup></span>
+        <span>Tatiana Gerth<sup>1</sup></span>
+        <span>Sergey Prokudin<sup>2</sup></span>
+        <span>Matthias Seibold<sup>3</sup></span>
+        <span>Reto Bürgin<sup>1</sup></span>
+        <span>Benjamin Vella<sup>4</sup></span>
+        <span>Armando Hoch<sup>3</sup></span>
+        <span>Siyu Tang<sup>2</sup></span>
+        <span>Philipp Fürnstahl<sup>3</sup></span>
+        <span>Helmut Grabner<sup>1</sup></span>
+      </p>
+  </section>
+
+  <section class="authors">
+    <div>
+      <div><strong><sup>1</sup></strong> Zurich University of Applied Sciences</div>
+      <div><strong><sup>2</sup></strong> ETH Zurich</div>
+      <div><strong><sup>3</sup></strong> Balgrist University Hospital</div>
+      <div><strong><sup>4</sup></strong> University of Zurich</div>
+    </div>
+  </section>
+
+  <section>
+    <h1>About the Paper</h1>
+    <p><b>This study shows that an interactive 3D tool outperforms standard 2D videos in teaching total hip arthroplasty, especially for residents and users with prior 3D experience.</b></p>
+    <p>Surgical training encompasses years of didactic education, simulation-based practice, mentorship, and hands-on
+      experience. However, it faces ongoing challenges, including high stress levels, complex technical demands, and the
+      rapid integration of new technologies. In orthopedic education, traditional resources such as textbooks, images,
+      and videos are still widely used but often lack interactivity. This study investigates the effectiveness of a
+      novel interactive, photorealistic 3D visualization tool compared to standard 2D instructional videos for teaching
+      total hip arthroplasty. Conducted as a randomized controlled trial, the study assessed students and residents on
+      spatial understanding, instrument placement, and task completion times within a simulation environment. Findings
+      reveal that the interactive 3D visualization significantly enhanced performance, particularly among residents and
+      participants with prior 3D experience. These results highlight the strong potential of immersive 3D tools to
+      improve orthopedic surgical training.</p>
+    <div class="logos">
+      <img src="images/User-Study-Flow.png" alt="User Study Flow" />
+    </div>
+  </section>
+
+  <section>
+    <h2>The Portal</h2>
+    <p>Building on insights from the paper and user study, we have created a portal that showcases the features and capabilities of this advanced application. We encourage you to try the demo web version or download the full executable file. Within this portal, you can explore total hip surgery by watching a video of the procedure or by interacting with and navigating through points of interest in photorealistic 3D.</p>
+  </section>
+
+  <section>
+    <h2>Online Demo Version - Coming soon</h2>
+    <!-- <iframe src="https://example.com/playable-game"></iframe> -->
+  </section>
+
+  <section style="text-align: center;">
+    <a class="button" href="/downloads/project-full-version.zip" download>
+      <i class="fas fa-download"></i> Download Full Version
+    </a>
+    <a class="button" href="/downloads/project-full-version.zip" download>
+      <i class="fas fa-file-alt"></i> Download The Paper
+    </a>
+    <a href="https://official-website.com" target="_blank" class="button">
+      <i class="fas fa-globe"></i> Visit Official Website
+    </a>
+  </section>
+
+  <section>
+    <h2>The PROFICIENCY project is implemented by the following partners:</h2>
+    <div class="logos">
+      <img src="images/Partners.avif" alt="Partners" />
+    </div>
+  </section>
+
+  <section>
+    <h2>The PROFICIENCY project is endorsed by the following expert associations:</h2>
+    <div class="logo-row">
+      <img src="images/swiss-orthopaedics.jpg" alt="Partner 1" />
+      <img src="images/swisscollegeofsurgeons.svg" alt="Partner 2" />
+      <img src="images/ssc.svg" alt="Partner 3" />
+    </div>
+  </section>
+
+  <section>
+    <h2>The PROFICIENCY project is financially supported by:</h2>
+    <div class="logo logo-small">
+      <img src="images/Innosuisse.avif" alt="Innosuisse" />
+    </div>
+  </section>
+</body>
+
+</html>
