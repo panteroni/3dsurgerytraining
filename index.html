@@ -5,451 +5,138 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
- 
- <title>Enhancing Orthopedic Surgical Training With<br> Interactive
-  Photorealistic 3D Visualization</title>
+  <link rel="stylesheet" href="Styles.css">
+
+  <title>SurgiScope - Surgical Training Platform</title>
   <link rel="icon" href="images/Logo.avif" type="image/x-icon">
-  <style>
-    :root {
-      --bg: #f9f9f9;
-      --text: #1a1a1a;
-      --accent: #0057ff;
-      --card-bg: #fff;
-      --border: #e0e0e0;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2vh 2rem;
-      line-height: 1.6;
-    }
-
-    .logo {
-      margin-bottom: 1rem;
-    }
-
-    .logo img {
-      max-width: 250px;
-      height: auto;
-    }
-
-    .gifs {
-      margin-bottom: 1rem;
-    }
-
-    .gifs img {
-      max-width: 400px;
-      height: auto;
-    }
-
-    .site-title {
-      font-size: 2rem;
-      font-weight: bold;
-      color: var(--accent);
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-
-    section {
-      max-width: 870px;
-      width: 100%;
-      background: var(--card-bg);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--border);
-    }
-
-    h1,
-    h2 {
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-
-    p,
-    ul {
-      margin: 0 0 1rem 0;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      margin: 20px;
-      background: #fff;
-      color: var(--accent);
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.2s ease-in-out;
-      border-radius: 6px;
-      border: 1px solid var(--accent);
-    }
-
-    .button:hover {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-      border-radius: 8px;
-      background: #000;
-    }
-
-    .logo-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: nowrap;
-      margin: 40px 0;
-    }
-
-    .logo-row img {
-      height: 95px;
-      width: auto;
-      max-width: 100%;
-      object-fit: contain;
-    }
-
-    .logo-small img {
-      max-width: 500px;
-      /* Adjust the size as needed */
-      height: auto;
-      margin: 0 auto;
-      /* Ensures the image is centered */
-      display: block;
-      /* Required for margin auto to work */
-
-    }
-
-    .logos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .logos img {
-      max-height: 500px;
-      object-fit: contain;
-    }
-
-    .authors {
-      text-align: center;
-      max-width: 800px;
-      width: 100%;
-      background: none;
-      padding: 0rem;
-      margin-bottom: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.00);
-      border: 0px solid var(--border);
-    }
-
-    .authors h2 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-
-    .author-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-      justify-items: center;
-    }
-
-    .author-list div {
-      background: var(--card-bg);
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      font-size: 0.9rem;
-      color: var(--text);
-    }
-
-    .authors,
-    .affiliations {
-      margin-bottom: 2em;
-    }
-
-    .authors span {
-      display: inline-block;
-      margin-right: 10px;
-    }
-  </style>
+  
 </head>
 
 <body>
-  <div class="logo">
-    <img src="images/Logo.avif" alt="Proficiency" />
-  </div>
-  <div class="site-title">Enhancing Orthopedic Surgical Training With<br> Interactive
-    Photorealistic 3D Visualization</div>
+  <header>
+    <h1>SurgiScope</h1>
+    <nav>
+      <a href="index.html" class="hover-effect active">Home</a>
+      <a href="paper.html" class="hover-effect">Paper</a>
+      <a href="https://www.surgicalproficiency.ch/" class="hover-effect">PROFICIENCY</a>
+    </nav>
+    <style>
+      .hover-effect {
+      position: relative;
+      text-decoration: none;
+      }
 
-  <section class="authors">
-    <!-- <h2>Authors</h2> -->
-    <p>
-      <span>Roni Lekar<sup>*1</sup></span>
-      <span>Tatiana Gerth<sup>1</sup></span>
-      <span>Sergey Prokudin<sup>2</sup></span>
-      <span>Matthias Seibold<sup>3</sup></span>
-      <span>Reto Bürgin<sup>1</sup></span>
-      <span>Benjamin Vella<sup>4</sup></span>
-      <span>Armando Hoch<sup>3</sup></span>
-      <span>Siyu Tang<sup>2</sup></span>
-      <span>Philipp Fürnstahl<sup>3</sup></span>
-      <span>Helmut Grabner<sup>1</sup></span>
-    </p>
-  </section>
+      .hover-effect::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+      }
 
-  <section class="authors">
-    <div>
-      <div><strong><sup>1</sup></strong> Zurich University of Applied Sciences</div>
-      <div><strong><sup>2</sup></strong> ETH Zurich</div>
-      <div><strong><sup>3</sup></strong> Balgrist University Hospital</div>
-      <div><strong><sup>4</sup></strong> University of Zurich</div>
+      .hover-effect:hover::after {
+      width: 100%;
+      }
+    </style>
+  </header>
+
+  <div class="hero">
+    <a href="https://www.surgicalproficiency.ch/" target="_blank">
+      <img src="images/Logo.avif" alt="Proficiency" style="width: 100%; height: auto;" />
+    </a>    <h1>Surgical Training Platform</h1>
+    <p>Interactive 3D Visualization for Enhanced Learning</p>
+    <div class="buttons">
+      <a href="#" class="button" style="pointer-events: none; opacity: 0.5;"><i class="fab fa-windows"></i> Windows</a>
+      <a href="#" class="button" style="pointer-events: none; opacity: 0.5;"><i class="fab fa-apple"></i> Mac</a>
+      <a href="#" class="button" style="pointer-events: none; opacity: 0.5;"><i class="fas fa-cloud"></i> Online</a>
+      <a href="paper.html" class="button" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
     </div>
-  </section>
+  </div>
 
-  <section style="text-align: center;">
-
-    <a class="button"
-      href="https://github.com/panteroni/3dsurgerytraining/blob/c6e5c703fd913be216032b9ba9e65e549c926a52/Enhancing_Orthopedic_Surgical_Training_With_Interactive_Photorealistic_3D_Visualization.pdf"
-      download target="_blank">
-      <i class="fas fa-file-alt"></i> Paper
-    </a>
-
-    <a href="#" download target="_blank" class="button" style="pointer-events: none; opacity: 0.5;">
-      <i class="fas fa-archive"></i> Archive Paper
-    </a>
-
-    <!-- <a href="https://github.com/panteroni/3dsurgerytraining" download target="_blank" class="button">
-      <i class="fab fa-github"></i> Git
-    </a> -->
-
-    <a href="https://www.surgicalproficiency.ch/" download target="_blank" class="button">
-      <i class="fas fa-globe"></i> Project Homepage
-    </a>
+  <section id="portal">
+    <h2>The Platform</h2>
+    <p>Explore surgical procedures using advanced interactive 3D tools. Engage with high-resolution videos and photorealistic anatomical models to navigate and understand complex surgical steps.
+      Enhance your learning through detailed 3D reconstructions and assess your knowledge through integrated evaluation modules.
+      We evaluated the effectiveness of this platform with dozens of medical students, residents, and senior surgeons. The results demonstrate that our new method significantly enhances the learning of surgical procedures compared to traditional approaches.
+    </p>
+    <!-- <div class="logos">
+      <img src="images/Tutorial.gif" alt="Tutorial" style="max-width: 300px; height: auto;">
+      <img src="images/TargetToolAndBoneStep3.gif" alt="Target Tool and Bone" style="max-width: 300px; height: auto;">
+    </div> -->
   </section>
 
   <section>
-    <h1>The Paper</h1>
+    <h2>Reimagining Surgical Learning with Modern Tools</h2>
     <p>This study shows that an interactive 3D tool outperforms standard 2D videos in teaching total hip
-        arthroplasty, especially for residents and users with prior 3D experience.</p>
+      arthroplasty, especially for residents and users with prior 3D experience.</p>
 
-        <div class="gifs">
-          <table style="width: 100%; text-align: left; border-spacing: 20px 0;">
-            <tr>
-              <td>
-          <img src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/Tutorial.gif" alt="Tutorial" style="border-radius: 12px;" />
-          <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Tutorial:</b> Introduction and guidance, overview of the interactive 3D tool, placing the cheese into the mold.</p>
-              </td>
-              <td>
-          <img src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/TargetToolAndBoneStep3.gif" alt="Target Tool and Bone" style="border-radius: 12px;" />
-          <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Target Tool and Bone:</b> Showcasing accurate instrument positioning.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-          <img src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/GaussianSplattingStep2.gif" alt="Gaussian Splatting" style="border-radius: 12px;" />
-          <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Interactive Visualization:</b> A 3D model with navigable and toggleable anatomical structures.</p>
-              </td>
-              <td>
-          <img src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/FlyOverStep2.gif" alt="Fly Over" style="border-radius: 12px;" />
-          <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Flyover Video:</b> A dynamic, non-interactive video of a surgical step with labeled anatomical structures.</p>
-              </td>
-            </tr>
-          </table>
-        </div>
+    <div class="gifs">
+      <table style="width: 100%; text-align: left; border-spacing: 20px 0;">
+        <tr>
+          <td>
+            <img
+            src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/TargetToolAndBoneStep2.gif"
+            alt="Tutorial" style="border-radius: 12px;" />
+            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Target Tool and Bone:</b> Showcasing
+              accurate instrument positioning.</p>
+          </td>
+          <td>
+            <img
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/TargetToolAndBoneStep3.gif"
+              alt="Target Tool and Bone" style="border-radius: 12px;" />
+            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Target Tool and Bone:</b> Showcasing
+              accurate instrument positioning.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/GaussianSplattingStep2.gif"
+              alt="Gaussian Splatting" style="border-radius: 12px;" />
+            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Interactive Visualization:</b> A 3D
+              model with navigable and toggleable anatomical structures.</p>
+          </td>
+          <td>
+            <img
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/FlyOverStep2.gif"
+              alt="Fly Over" style="border-radius: 12px;" />
+            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Flyover Video:</b> A dynamic,
+              non-interactive video of a surgical step with labeled anatomical structures.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
   </section>
-
- 
-
   
-<section> 
-
-  <h1>User Study</h1>
-
-  <p>Surgical training integrates several years of didactic learning, simulation, mentorship,
-    and hands-on experience. Challenges include stress, technical demands, and new tech-
-    nologies. Orthopedic education often uses static materials like books, images, and videos,
-    lacking interactivity. This study compares a new interactive photorealistic 3D visualiza-
-    tion to 2D videos for learning total hip arthroplasty. In a randomized controlled trial,
-    participants (students and residents) were evaluated on spatial awareness, tool placement,
-    and task times in a simulation. Results show that interactive photorealistic 3D visual-
-    ization significantly improved scores, with residents and those with prior 3D experience
-    performing better. These results emphasize the potential of the interactive photorealistic
-    3D visualization to enhance orthopedic training.</p>
-  <div class="logos">
-    <img src="images/User-Study-Flow.png" alt="User Study Flow" />
-  </div>
-</section>
-
-<section>
-  <h2>BibTeX</h2>
-  <div class="bibtex-container" style="position: relative; background: #2d2d2d; color: #f8f8f2; padding-top: 2rem; border-radius: 8px; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; line-height: 1.5; overflow-x: auto;">
-    <button onclick="copyBibTeX()" class="button" style="position: absolute; top: 0px; right: 0px; font-size: 0.8rem;">
-      <i class="fas fa-copy"></i> Copy
-    </button>
-    <pre>
-  @inproceedings{lekar2025enhancing,
-    title     = {Enhancing Orthopedic Surgical Training With Interactive Photorealistic 3D Visualization},
-    author    = {Roni Lekar and Tatiana Gerth and Sergey Prokudin and Matthias Seibold and Reto Bürgin and Benjamin Vella and Armando Hoch and Siyu Tang and Philipp Fürnstahl and Helmut Grabner},
-    booktitle = {Proceedings of CAOS 2025},
-    year      = {2025},
-    institution = {Zurich University of Applied Sciences, ETH Zurich, Balgrist University Hospital, University of Zurich},
-    }
-    </pre>
-  </div>
-
-  <script>
-    function copyBibTeX() {
-      const bibtexContent = `@inproceedings{lekarOrthopedicVisualization,
-    title     = {Enhancing Orthopedic Surgical Training With Interactive Photorealistic 3D Visualization},
-    author    = {Roni Lekar and Tatiana Gerth and Sergey Prokudin and Matthias Seibold and Reto Bürgin and Benjamin Vella and Armando Hoch and Siyu Tang and Philipp Fürnstahl and Helmut Grabner},
-    booktitle = {Proceedings of [Insert Conference Name]},
-    year      = {2023},
-    institution = {Zurich University of Applied Sciences, ETH Zurich, Balgrist University Hospital, University of Zurich},
-    note      = {*Equal contribution, if applicable}
-  }`;
-      const message = document.createElement('div');
-      message.textContent = 'BibTeX copied to clipboard!';
-      message.style.position = 'fixed';
-      message.style.bottom = '20px';
-      message.style.left = '50%';
-      message.style.transform = 'translateX(-50%)';
-      message.style.background = '#0057ff';
-      message.style.color = '#fff';
-      message.style.padding = '10px 20px';
-      message.style.borderRadius = '20px';
-      message.style.fontSize = '1rem';
-      message.style.fontWeight = 'bold';
-      message.style.opacity = '0';
-      message.style.transition = 'opacity 0.5s ease';
-      document.body.appendChild(message);
-
-      // Fade in
-      setTimeout(() => {
-        message.style.opacity = '1';
-      }, 100);
-
-      // Fade out after 2 seconds
-      setTimeout(() => {
-        message.style.opacity = '0';
-        // Remove the message after fade out
-        setTimeout(() => {
-          document.body.removeChild(message);
-        }, 500);
-      }, 2000);
-
-      navigator.clipboard.writeText(bibtexContent);
-    }
-  </script>
-</section>
-
-
-<section>
-  <h2>The Portal</h2>
-  <p>Building on insights from the paper and user study, we have created a portal that showcases the features and
-    capabilities of this advanced application. We encourage you to try the demo web version or download the full
-    executable file. Within this portal, you can explore total hip surgery by watching a video of the procedure or by
-    interacting with and navigating through points of interest in photorealistic 3D.</p>
-
-  <div style="text-align: center; max-width: 870px; margin: 0 auto;">
-
-    <a class="button" href="#" style="pointer-events: none; opacity: 0.5;" download target="_blank">
-      <i class="fab fa-windows"></i> Windows Version
-    </a>
-
-    <a class="button" href="#" style="pointer-events: none; opacity: 0.5;" download target="_blank">
-      <i class="fab fa-apple"></i> Mac Version
-    </a>
-
-    <a class="button" href="#" style="pointer-events: none; opacity: 0.5;" target="_self">
-      <i class="fas fa-cloud"></i> Online Version
-    </a>
-
-    </a>
-  </div>
-
-  </section>
-
-
-  <!-- <section>
-    <h2 id="online-demo-version">Online Demo Version - Coming soon</h2>
-    <iframe src="https://example.com/playable-game"></iframe>
-  </section> -->
-
   <section>
     <h2>The PROFICIENCY project is implemented by the following partners:</h2>
     <div class="logos">
-      <img src="images/Partners.avif" alt="Partners" />
+      <img src="images/Partners.avif" alt="Partners" style="max-width: 800px; height: auto; display: block; margin: 0 auto;" />
     </div>
   </section>
 
   <section>
     <h2>The PROFICIENCY project is endorsed by the following expert associations:</h2>
-    <div class="logo-row">
-      <img src="images/swiss-orthopaedics.jpg" alt="Partner 1" />
-      <img src="images/swisscollegeofsurgeons.svg" alt="Partner 2" />
-      <img src="images/ssc.svg" alt="Partner 3" />
+    <div class="logo-row" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <img src="images/swiss-orthopaedics.jpg" alt="Partner 1" style="max-width: 250px; height: auto;" />
+      <img src="images/swisscollegeofsurgeons.svg" alt="Partner 2" style="max-width: 250px; height: auto;" />
+      <img src="images/ssc.svg" alt="Partner 3" style="max-width: 250px; height: auto;" />
     </div>
   </section>
 
   <section>
     <h2>The PROFICIENCY project is financially supported by:</h2>
     <div class="logo logo-small">
-      <img src="images/Innosuisse.avif" alt="Innosuisse" />
+      <img src="images/Innosuisse.avif" style="max-width: 450px; display: block; margin: 0 auto;" alt="Innosuisse" />
     </div>
   </section>
-  <section style="text-align: center; color: var(--text); background: none; border: none; box-shadow: none; margin-top: 0rem;">
-    ©2025 Copyright: PROFICIENCY project
-  </section>
 
-  <div id="scroll-indicator" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 20px; font-size: 1rem; font-weight: bold; animation: bounce 1.5s infinite; z-index: 1000; transition: opacity 0.5s ease;">
-    Scroll down to see more ↓
-  </div>
-
-  <script>
-    // JavaScript to fade out the scroll indicator on scroll
-    window.addEventListener('scroll', function () {
-      const scrollIndicator = document.getElementById('scroll-indicator');
-      if (window.scrollY > 50) {
-        scrollIndicator.style.opacity = '0'; // Fade out
-      } else {
-        scrollIndicator.style.opacity = '1'; // Fade in
-      }
-    });
-  </script>
-
-  <style>
-    /* Add this CSS for the bounce animation */
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateX(-50%) translateY(0);
-      }
-      40% {
-        transform: translateX(-50%) translateY(-10px);
-      }
-      60% {
-        transform: translateX(-50%) translateY(-5px);
-      }
-    }
-  </style>
+  <footer style="background-color: #f8f9fa; padding: 1rem 0; text-align: center; border-top: 1px solid #dee2e6; margin-top: 2rem;">
+    <p style="margin: 0; font-size: 0.9rem; color: #6c757d;">©2025 PROFICIENCY - All Rights Reserved</p>
+  </footer>
 </body>
 
 </html>
