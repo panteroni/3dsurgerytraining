@@ -45,17 +45,17 @@
   </header>
 
   <!-- Add padding to push content below the header -->
-  <div style="padding-top: 80px;">
+  <div style="padding-top: 80px; text-align: center;">
     <div class="logo" style="max-width: 250px; margin: 0 auto;">
       <a href="https://www.surgicalproficiency.ch/" target="_blank">
         <img src="images/Logo.avif" alt="Proficiency" style="width: 100%; height: auto;" />
       </a>
-
     </div>
-    <div class="site-title">Enhancing Orthopedic Surgical Training With<br> Interactive
-      Photorealistic 3D Visualization</div>
+    <div class="site-title" style="font-size: 1.5rem; line-height: 1.4; margin-top: 20px;">
+      Enhancing Orthopedic Surgical Training With<br> Interactive Photorealistic 3D Visualization
+    </div>
 
-    <section class="authors">
+    <section class="authors" style="margin-top: 20px; font-size: 1rem; line-height: 1.6;">
       <span>Roni Lekar<sup>*1</sup></span>
       <span>Tatiana Gerth<sup>1</sup></span>
       <span>Sergey Prokudin<sup>2</sup></span>
@@ -68,50 +68,71 @@
       <span>Helmut Grabner<sup>1</sup></span>
     </section>
 
-    <section class="authors">
-      <div>
+    <section class="authors" style="margin-top: 20px; font-size: 1rem; line-height: 1.6;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;"></div>
         <div><strong><sup>1</sup></strong> Zurich University of Applied Sciences</div>
         <div><strong><sup>2</sup></strong> ETH Zurich</div>
         <div><strong><sup>3</sup></strong> Balgrist University Hospital</div>
         <div><strong><sup>4</sup></strong> University of Zurich</div>
       </div>
     </section>
+  </div>
+
+  <style>
+    @media (max-width: 768px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+
+      .authors span {
+        font-size: 0.9rem;
+      }
+
+      .authors div {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 
     <section style="text-align: center;">
 
       <a class="button"
-        href="https://github.com/panteroni/3dsurgerytraining/blob/c6e5c703fd913be216032b9ba9e65e549c926a52/Enhancing_Orthopedic_Surgical_Training_With_Interactive_Photorealistic_3D_Visualization.pdf"
-        download target="_blank">
-        <i class="fas fa-file-alt"></i> Paper
+      href="https://github.com/panteroni/3dsurgerytraining/blob/c6e5c703fd913be216032b9ba9e65e549c926a52/Enhancing_Orthopedic_Surgical_Training_With_Interactive_Photorealistic_3D_Visualization.pdf"
+      download target="_blank" style="margin: 10px 10px; display: inline-block;">
+      <i class="fas fa-file-alt"></i> Download Paper
       </a>
 
-      <a href="#" download target="_blank" class="button" style="pointer-events: none; opacity: 0.5;">
-        <i class="fas fa-archive"></i> Archive Paper
+      <a href="#" download target="_blank" class="button" style="pointer-events: none; opacity: 0.5; margin: 10px 10px; display: inline-block;">
+      <i class="fas fa-archive"></i> Archive Paper
       </a>
 
-      <!-- <a href="https://github.com/panteroni/3dsurgerytraining" download target="_blank" class="button">
-        <i class="fab fa-github"></i> Git
-      </a> -->
-
-      <a href="index.html" download target="_blank" class="button">
-        <i class="fas fa-video"></i> Portal
+      <a href="index.html" class="button" style="margin: 10px 10px; display: inline-block;">
+      <i class="fas fa-video"></i> The Platform
       </a>
     </section>
 
+    <style>
+      @media (max-width: 768px) {
+      section a.button {
+        display: block;
+        margin: 10px auto;
+      }
+      }
+    </style>
+
     <section>
-      <h2>The Paper</h2>
+      <h2>Reimagining Surgical Learning with Modern Tools</h2>
       <p>This study shows that an interactive 3D tool outperforms standard 2D videos in teaching total hip
         arthroplasty, especially for residents and users with prior 3D experience.</p>
-
+  
       <div class="gifs">
         <table style="width: 100%; text-align: left; border-spacing: 20px 0;">
           <tr>
             <td>
               <img
-                src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/Tutorial.gif"
-                alt="Tutorial" style="border-radius: 12px;" />
-              <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Tutorial:</b> Introduction and
-                guidance, overview of the interactive 3D tool, placing the cheese into the mold.</p>
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/Tutorial.gif"
+              alt="Tutorial" style="border-radius: 12px;" />
+              <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Tutorial:</b> Guided walkthrough with a mini-game to learn how to use the tool.</p>
             </td>
             <td>
               <img
@@ -211,21 +232,18 @@
       }
     </script>
 
-  <section>
-    <h2>The Portal</h2>
+  <section style="border: 2px dashed #ccc; border-radius: 8px; background: repeating-linear-gradient(45deg, #f6f9ff, #f6f9ff 10px, #ffffff 10px, #ffffff 20px);">
+    <h2>Surgical Training Platform</h2>
     <p>Building on insights from the paper and user study, we have created a portal that showcases the features and
       capabilities of this advanced application. We encourage you to try the demo web version or download the full
       executable file. Within this portal, you can explore total hip surgery by watching a video of the procedure or by
       interacting with and navigating through points of interest in photorealistic 3D.</p>
 
     <div style="text-align: right;">
-      <a href="index.html" download target="_blank" class="button">
-        <i class="fas fa-video"></i> Portal
-      </a>
-
+      <a href="index.html" class="button">
+        <i class="fas fa-video"></i> Try now
       </a>
     </div>
-
   </section>
 
 
