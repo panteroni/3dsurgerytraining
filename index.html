@@ -9,7 +9,7 @@
 
   <title>SurgiScope - Surgical Training Platform</title>
   <link rel="icon" href="images/Logo.avif" type="image/x-icon">
-  
+
 </head>
 
 <body>
@@ -22,45 +22,51 @@
     </nav>
     <style>
       .hover-effect {
-      position: relative;
-      text-decoration: none;
+        position: relative;
+        text-decoration: none;
       }
 
       .hover-effect::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 0;
-      height: 2px;
-      background: var(--accent);
-      transition: width 0.3s ease;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: var(--accent);
+        transition: width 0.3s ease;
       }
 
       .hover-effect:hover::after {
-      width: 100%;
+        width: 100%;
       }
     </style>
   </header>
 
-  <div class="hero">
+  <div class="hero" style="padding-top: 80px; text-align: center;">
     <a href="https://www.surgicalproficiency.ch/" target="_blank">
-      <img src="images/Logo.avif" alt="Proficiency" style="width: 100%; height: auto;" />
-    </a>    <h1>Surgical Training Platform</h1>
-    <p>Interactive 3D Visualization for Enhanced Learning</p>
-    <div class="buttons">
+      <img src="images/Logo.avif" alt="Proficiency" style="max-width: 250px; height: auto;" />
+    </a>
+    <h1 style="margin-bottom: 0px; font-size: 2.5em;">SurgiScope</h1>
+    <h1 style="margin-top: 0; font-size: 1.8em;">Surgical Training Platform</h1>
+    
+    <div class="buttons" style="padding-top: 30px; text-align: center;">
       <a href="#" class="button" style="pointer-events: none; opacity: 0.5;"><i class="fab fa-windows"></i> Windows</a>
       <a href="#" class="button" style="pointer-events: none; opacity: 0.5;"><i class="fab fa-apple"></i> Mac</a>
       <a href="#" class="button" style="pointer-events: none; opacity: 0.5;"><i class="fas fa-cloud"></i> Online</a>
-      <a href="paper.html" class="button" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="paper.html" class="button"><i class="fas fa-file-alt"></i> Paper</a>
     </div>
   </div>
 
   <section id="portal">
     <h2>The Platform</h2>
-    <p>Explore surgical procedures using advanced interactive 3D tools. Engage with high-resolution videos and photorealistic anatomical models to navigate and understand complex surgical steps.
-      Enhance your learning through detailed 3D reconstructions and assess your knowledge through integrated evaluation modules.
-      We evaluated the effectiveness of this platform with dozens of medical students, residents, and senior surgeons. The results demonstrate that our new method significantly enhances the learning of surgical procedures compared to traditional approaches.
+    <p>Explore surgical procedures using advanced interactive 3D tools. Engage with high-resolution videos and
+      photorealistic anatomical models to navigate and understand complex surgical steps.
+      Enhance your learning through detailed 3D reconstructions and assess your knowledge through integrated evaluation
+      modules.
+      We evaluated the effectiveness of this platform with dozens of medical students, residents, and senior surgeons.
+      The results demonstrate that our new method significantly enhances the learning of surgical procedures compared to
+      traditional approaches.
     </p>
     <!-- <div class="logos">
       <img src="images/Tutorial.gif" alt="Tutorial" style="max-width: 300px; height: auto;">
@@ -78,43 +84,41 @@
         <tr>
           <td>
             <img
-            src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/TargetToolAndBoneStep2.gif"
-            alt="Tutorial" style="border-radius: 12px;" />
-            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Target Tool and Bone:</b> Showcasing
-              accurate instrument positioning.</p>
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/Video.gif"
+              alt="Tutorial" style="border-radius: 12px;" />
+            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Video:</b> Watch real surgical footage to understand each step.</p>
           </td>
           <td>
             <img
-              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/TargetToolAndBoneStep3.gif"
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/Tools.gif"
               alt="Target Tool and Bone" style="border-radius: 12px;" />
-            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Target Tool and Bone:</b> Showcasing
-              accurate instrument positioning.</p>
+            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Tools:</b> Hover to highlight and explore surgical instruments in 3D.</p>
           </td>
         </tr>
         <tr>
           <td>
             <img
-              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/GaussianSplattingStep2.gif"
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/BonesAndImplant.gif"
               alt="Gaussian Splatting" style="border-radius: 12px;" />
             <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Interactive Visualization:</b> A 3D
               model with navigable and toggleable anatomical structures.</p>
           </td>
           <td>
             <img
-              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/FlyOverStep2.gif"
+              src="https://www.frozen.co.il/Paper/Enhancing%20Orthopedic%20Surgical%20Training%20With%20Interactive%20Photorealistic%203D%20Visualization/Evaluation.gif"
               alt="Fly Over" style="border-radius: 12px;" />
-            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Flyover Video:</b> A dynamic,
-              non-interactive video of a surgical step with labeled anatomical structures.</p>
+            <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Evaluation:</b> Test your knowledge through interactive assessments.
+            </p>
           </td>
         </tr>
       </table>
     </div>
   </section>
-  
+
   <section>
     <h2>The PROFICIENCY project is implemented by the following partners:</h2>
-    <div class="logos">
-      <img src="images/Partners.avif" alt="Partners" style="max-width: 800px; height: auto; display: block; margin: 0 auto;" />
+    <div class="logos" style="text-align: center;"></div>
+    <img src="images/Partners.avif" alt="Partners" style="max-width: 100%; height: auto; display: inline-block;" />
     </div>
   </section>
 
@@ -134,7 +138,8 @@
     </div>
   </section>
 
-  <footer style="background-color: #f8f9fa; padding: 1rem 0; text-align: center; border-top: 1px solid #dee2e6; margin-top: 2rem;">
+  <footer
+    style="background-color: #f8f9fa; padding: 1rem 0; text-align: center; border-top: 1px solid #dee2e6; margin-top: 2rem;">
     <p style="margin: 0; font-size: 0.9rem; color: #6c757d;">©2025 PROFICIENCY - All Rights Reserved</p>
   </footer>
 </body>
