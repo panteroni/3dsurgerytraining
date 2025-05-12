@@ -8,14 +8,18 @@
 
   <title>Enhancing Orthopedic Surgical Training With Interactive
     Photorealistic 3D Visualization</title>
-  <link rel="icon" href="images/Logo.avif" type="image/x-icon">
+  <link rel="icon" href="images/SurgiScopeIconWhite.png" type="image/x-icon">
   <link rel="stylesheet" href="Styles.css"> <!-- Link to the external CSS file -->
 
 </head>
 
 <body>
   <header>
-    <h1>SurgiScope</h1>
+    <div class="logo" style="max-width: 120px; margin: 0; display: flex; align-items: center;">
+      <a href="index.html" style="display: block;">
+        <img src="images/SurgiScopeLogo2.png" alt="Proficiency" style="width: 100%; height: auto; display: block;" />
+      </a>
+    </div>
     <nav>
       <a href="index.html" class="hover-effect">Home</a>
       <a href="paper.html" class="hover-effect active">Paper</a>
@@ -76,7 +80,41 @@
       <div><strong><sup>4</sup></strong> University of Zurich</div>
   </div>
   </section>
+
+  <div class="responsive-badges"
+    style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+    <a href="https://boneandjoint.org.uk/journal/bjj" target="_blank" rel="noopener" class="button badge-btn"
+      style="display: flex; align-items: center; background: #e6f7e6; border: 2px solid #4caf50; border-radius: 12px; padding: 12px 24px; font-size: 1.1rem; font-weight: bold; color: #256029; box-shadow: 0 2px 8px rgba(76,175,80,0.08); text-decoration: none; margin: 0;">
+      <i class="fas fa-check-circle" style="color: #4caf50; margin-right: 10px; font-size: 1.5rem;"></i>
+      Accepted to <span style="margin-left: 6px; font-style: italic;">The Bone & Joint Journal</span>
+    </a>
+    <a href="https://www.caos-international.org/" target="_blank" rel="noopener" class="button badge-btn"
+      style="display: flex; align-items: center; background: #e3f2fd; border: 2px solid #1976d2; border-radius: 12px; padding: 12px 24px; font-size: 1.1rem; font-weight: bold; color: #0d305a; box-shadow: 0 2px 8px rgba(25,118,210,0.08); text-decoration: none; margin: 0;">
+      <i class="fas fa-award" style="color: #1976d2; margin-right: 10px; font-size: 1.5rem;"></i>
+      <span style="margin-left: 6px; font-style: italic;">CAOS 2025</span>, Podium Award
+    </a>
   </div>
+  <style>
+    @media (max-width: 600px) {
+      .responsive-badges {
+        flex-direction: column !important;
+        gap: 12px !important;
+        align-items: stretch !important;
+      }
+
+      .responsive-badges .badge-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 1rem !important;
+        padding: 10px 8px !important;
+      }
+
+      .responsive-badges .badge-btn i {
+        font-size: 1.2rem !important;
+        margin-right: 8px !important;
+      }
+    }
+  </style>
 
   <style>
     @media (max-width: 768px) {
@@ -107,9 +145,14 @@
       <i class="fas fa-archive"></i> Archive Paper
     </a>
 
-    <a href="index.html" class="button" style="margin: 10px 10px; display: inline-block;">
-      <i class="fas fa-video"></i> The Platform
+
+    <a href="index.html" class="button"
+      style="background: #fff; color: #007bff; border: 0px solid #007bff; box-shadow: 0 2px 8px rgba(0,0,0,0.10);">
+      <img src="images/SurgiScopeIcon.png" alt="SurgiScope Icon" style="height: 1.2em; vertical-align: middle;">
+      The Platform
     </a>
+
+
   </section>
 
   <style>
@@ -132,6 +175,31 @@
       as a more efficient and user-friendly alternative to conventional learning tools.
     </p>
   </section>
+
+
+
+
+
+
+  <section>
+
+    <h2>Abstract</h2>
+
+    <p>Surgical training integrates several years of didactic learning, simulation, mentorship,
+      and hands-on experience. Challenges include stress, technical demands, and new tech-
+      nologies. Orthopedic education often uses static materials like books, images, and videos,
+      lacking interactivity. This study compares a new interactive photorealistic 3D visualiza-
+      tion to 2D videos for learning total hip arthroplasty. In a randomized controlled trial,
+      participants (students and residents) were evaluated on spatial awareness, tool placement,
+      and task times in a simulation. Results show that interactive photorealistic 3D visual-
+      ization significantly improved scores, with residents and those with prior 3D experience
+      performing better. These results emphasize the potential of the interactive photorealistic
+      3D visualization to enhance orthopedic training.</p>
+    <div class="logos" style="text-align: center;">
+      <img src="images/User-Study-Flow.png" alt="User Study Flow" style="max-width: 100%; height: auto; width: 100%;" />
+    </div>
+  </section>
+
 
   <section>
     <h2>The User Study</h2>
@@ -176,27 +244,6 @@
     </div>
   </section>
 
-
-
-
-  <section>
-
-    <h2>Abstract</h2>
-
-    <p>Surgical training integrates several years of didactic learning, simulation, mentorship,
-      and hands-on experience. Challenges include stress, technical demands, and new tech-
-      nologies. Orthopedic education often uses static materials like books, images, and videos,
-      lacking interactivity. This study compares a new interactive photorealistic 3D visualiza-
-      tion to 2D videos for learning total hip arthroplasty. In a randomized controlled trial,
-      participants (students and residents) were evaluated on spatial awareness, tool placement,
-      and task times in a simulation. Results show that interactive photorealistic 3D visual-
-      ization significantly improved scores, with residents and those with prior 3D experience
-      performing better. These results emphasize the potential of the interactive photorealistic
-      3D visualization to enhance orthopedic training.</p>
-    <div class="logos" style="text-align: center;">
-      <img src="images/User-Study-Flow.png" alt="User Study Flow" style="max-width: 100%; height: auto; width: 100%;" />
-    </div>
-  </section>
 
   <section>
     <h2>BibTeX</h2>
@@ -256,7 +303,8 @@
 
     <div style="text-align: right;">
       <a href="index.html" class="button">
-        <i class="fas fa-video"></i> Try now
+        <img src="images/SurgiScopeIconWhite.png" alt="SurgiScope Icon" style="height: 1.2em; vertical-align: middle;">
+        Try now
       </a>
     </div>
   </section>
@@ -301,6 +349,23 @@
   </footer>
 
 
+  <div id="fade-background"
+    style="position: fixed; bottom: 0; left: 0; width: 100%; height: 100px; pointer-events: none; z-index: 999; transition: opacity 0.5s;">
+    <div
+      style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100px; background: linear-gradient(to top, rgba(246,249,255,0.95) 80%, rgba(246,249,255,0));">
+    </div>
+  </div>
+  <script>
+    // Fade out the bottom background on scroll
+    window.addEventListener('scroll', function () {
+      const fadeBg = document.getElementById('fade-background');
+      if (window.scrollY > 50) {
+        fadeBg.style.opacity = '0';
+      } else {
+        fadeBg.style.opacity = '1';
+      }
+    });
+  </script>
   <div id="scroll-indicator"
     style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; padding: 10px 20px; border-radius: 20px; font-size: 1rem; font-weight: bold; animation: bounce 1.5s infinite; z-index: 1000; transition: opacity 0.5s ease;">
     Scroll down to see more ↓
@@ -339,7 +404,6 @@
       }
     }
   </style>
-  </div>
 </body>
 
 </html>
