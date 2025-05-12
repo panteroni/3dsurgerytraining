@@ -8,13 +8,17 @@
   <link rel="stylesheet" href="Styles.css">
 
   <title>SurgiScope - Surgical Training Platform</title>
-  <link rel="icon" href="images/Logo.avif" type="image/x-icon">
+  <link rel="icon" href="images/SurgiScopeIconWhite.png" type="image/x-icon">
 
 </head>
 
 <body>
   <header>
-    <h1>SurgiScope</h1>
+    <div class="logo" style="max-width: 120px; margin: 0; display: flex; align-items: center;">
+      <a href="index.html" style="display: block;">
+        <img src="images/SurgiScopeLogo2.png" alt="Proficiency" style="width: 100%; height: auto; display: block;" />
+      </a>
+    </div>
     <nav>
       <a href="index.html" class="hover-effect active">Home</a>
       <a href="paper.html" class="hover-effect">Paper</a>
@@ -47,7 +51,14 @@
     <a href="index.html">
       <img src="images/Logo.avif" alt="Proficiency" style="max-width: 250px; height: auto;" />
     </a>
-    <h1 style="margin-bottom: 0px; font-size: 2.5em;">SurgiScope</h1>
+    <!-- <h1 style="margin-bottom: 0px; font-size: 2.5em;">SurgiScope</h1> -->
+    <div class="logo"
+      style="max-width: 250px; margin: 0 auto 0px auto; display: flex; align-items: center; justify-content: center;">
+      <a href="index.html" style="display: block;">
+        <img src="images/SurgiScopeLogo2.png" alt="Proficiency"
+          style="width: 100%; max-width: 250px; height: auto; display: block;" />
+      </a>
+    </div>
     <h1 style="margin-top: 0; font-size: 1.8em;">Surgical Training Platform</h1>
 
     <div class="buttons" style="padding-top: 30px; text-align: center;">
@@ -76,26 +87,28 @@
       </span>
       <script>
         // Tooltip show/hide logic
-        document.querySelectorAll('span[style*="position: relative"]').forEach(function(wrapper) {
+        document.querySelectorAll('span[style*="position: relative"]').forEach(function (wrapper) {
           var link = wrapper.querySelector('a');
           var tooltip = wrapper.querySelector('span[style*="visibility: hidden"]');
           if (link && tooltip) {
-            link.addEventListener('mouseenter', function() {
+            link.addEventListener('mouseenter', function () {
               tooltip.style.visibility = 'visible';
               tooltip.style.opacity = '1';
             });
-            link.addEventListener('mouseleave', function() {
+            link.addEventListener('mouseleave', function () {
               tooltip.style.visibility = 'hidden';
               tooltip.style.opacity = '0';
             });
           }
         });
       </script>
-      <a href="https://drive.google.com/drive/folders/1gJmdyqmrdguzz4jY3jTIxRMQDNruD_0_?usp=sharing" class="button"><i
+      <a href="https://drive.google.com/drive/folders/1gJmdyqmrdguzz4jY3jTIxRMQDNruD_0_?usp=sharing" target="_blank" class="button"><i
           class="fab fa-windows"></i> Windows</a>
-      <a href="https://drive.google.com/file/d/12K_LmJj3I1mYwQwR4BkHSJp1sG-3cthp/view?usp=sharing" class="button"><i
+      <a href="https://drive.google.com/file/d/12K_LmJj3I1mYwQwR4BkHSJp1sG-3cthp/view?usp=sharing" target="_blank" class="button"><i
           class="fab fa-apple"></i> Mac</a>
-      <a href="paper.html" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+            <a href="https://drive.google.com/file/d/12tCQ4624TBxZEZPpzK9FT-H0bR4pyE0n/view?usp=sharing" target="_blank" class="button"><i
+          class="fab fa-linux"></i> Linux</a>
+      <a href="paper.html" class="button" style="background: #fff; color: #007bff; border: 0px solid #007bff; box-shadow: 0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-file-alt"></i> Paper</a>
     </div>
   </div>
 
@@ -191,6 +204,7 @@
     style="background-color: #f8f9fa; padding: 1rem 0; text-align: center; border-top: 1px solid #dee2e6; margin-top: 2rem;">
     <p style="margin: 0; font-size: 0.9rem; color: #6c757d;">©2025 PROFICIENCY - All Rights Reserved</p>
   </footer>
+
 </body>
 
 </html>
