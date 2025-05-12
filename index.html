@@ -51,8 +51,46 @@
     <h1 style="margin-top: 0; font-size: 1.8em;">Surgical Training Platform</h1>
 
     <div class="buttons" style="padding-top: 30px; text-align: center;">
-      <a href="https://gaussiansplats-1znkpv2h1g10-v0vte.needle.run" class="button" target="_blank" rel="noopener"><i
-          class="fas fa-cloud"></i> Online</a>
+      <span style="position: relative; display: inline-block;">
+        <a href="https://gaussiansplats-1znkpv2h1g10-v0vte.needle.run" class="button" target="_blank" rel="noopener">
+          <i class="fas fa-cloud"></i> Online
+        </a>
+        <span style="
+          visibility: hidden;
+          background: #222;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 4px 10px;
+          position: absolute;
+          left: 50%;
+          bottom: 120%;
+          transform: translateX(-50%);
+          z-index: 1;
+          font-size: 0.9em;
+          white-space: nowrap;
+          opacity: 0;
+          transition: opacity 0.2s;
+          pointer-events: none;
+        ">Demo version</span>
+      </span>
+      <script>
+        // Tooltip show/hide logic
+        document.querySelectorAll('span[style*="position: relative"]').forEach(function(wrapper) {
+          var link = wrapper.querySelector('a');
+          var tooltip = wrapper.querySelector('span[style*="visibility: hidden"]');
+          if (link && tooltip) {
+            link.addEventListener('mouseenter', function() {
+              tooltip.style.visibility = 'visible';
+              tooltip.style.opacity = '1';
+            });
+            link.addEventListener('mouseleave', function() {
+              tooltip.style.visibility = 'hidden';
+              tooltip.style.opacity = '0';
+            });
+          }
+        });
+      </script>
       <a href="https://drive.google.com/drive/folders/1gJmdyqmrdguzz4jY3jTIxRMQDNruD_0_?usp=sharing" class="button"><i
           class="fab fa-windows"></i> Windows</a>
       <a href="https://drive.google.com/file/d/12K_LmJj3I1mYwQwR4BkHSJp1sG-3cthp/view?usp=sharing" class="button"><i
