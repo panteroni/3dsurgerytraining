@@ -57,7 +57,7 @@
   </header>
 
   <!-- Add padding to push content below the header -->
-  <div style="padding-top: 80px; text-align: center;">
+  <div class="paper-header-container"></div>
     <div class="logo" style="max-width: 250px; margin: 0 auto;">
       <a href="index.html">
         <img src="images/Logo.avif" alt="Proficiency" style="width: 100%; height: auto;" />
@@ -86,8 +86,33 @@
       <div><strong><sup>2</sup></strong> ETH Zurich</div>
       <div><strong><sup>3</sup></strong> Balgrist University Hospital</div>
       <div><strong><sup>4</sup></strong> University of Zurich</div>
+    </section>
   </div>
-  </section>
+  <style>
+  .paper-header-container {
+    padding-top: 80px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  @media (max-width: 768px) {
+    .paper-header-container {
+      max-width: 100vw;
+      padding-left: 10px;
+      padding-right: 10px;
+      overflow-x: hidden;
+    }
+    .paper-header-container .authors {
+      font-size: 0.95rem !important;
+      word-break: break-word;
+    }
+  }
+  body {
+    overflow-x: hidden;
+  }
+  </style>
 
   <div class="responsive-badges"
     style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
@@ -155,7 +180,7 @@
 
 
     <a href="index.html" class="button"
-      style="background: #fff; color: #007bff; border: 0px solid #007bff; box-shadow: 0 2px 8px rgba(0,0,0,0.10);">
+      style="margin: 10px 10px; display: inline-block; background: #fff; color: #007bff; border: 0px solid #007bff; box-shadow: 0 2px 8px rgba(0,0,0,0.10);">
       <img src="images/SurgiScopeIcon.png" alt="SurgiScope Icon" style="height: 1.2em; vertical-align: middle;">
       The Platform
     </a>
@@ -308,10 +333,12 @@
       interacting with and navigating through points of interest in photorealistic 3D.</p>
 
     <div style="text-align: right;">
-      <a href="index.html" class="button">
-        <img src="images/SurgiScopeIconWhite.png" alt="SurgiScope Icon" style="height: 1.2em; vertical-align: middle;">
-        Try now
-      </a>
+      <div style="display: flex; justify-content: flex-end;">
+        <a href="index.html" class="button" style="text-align: center;">
+          <img src="images/SurgiScopeIconWhite.png" alt="SurgiScope Icon" style="height: 1.2em; vertical-align: middle;">
+          Try now
+        </a>
+      </div>
     </div>
   </section>
 
