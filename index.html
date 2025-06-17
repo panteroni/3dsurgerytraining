@@ -22,7 +22,7 @@
     <nav>
       <a href="index.html" class="hover-effect active">Home</a>
       <a href="paper.html" class="hover-effect">Paper</a>
-      <a href="https://www.surgicalproficiency.ch/" class="hover-effect">PROFICIENCY</a>
+      <a href="https://www.surgicalproficiency.ch/" class="hover-effect" target="_blank" rel="noopener">PROFICIENCY</a>
     </nav>
     <style>
       .hover-effect {
@@ -63,9 +63,27 @@
 
     <div class="buttons" style="padding-top: 30px; text-align: center;">
       <span style="position: relative; display: inline-block;">
-        <a href="https://surgiscope-1znkpvz2ugvg6-z2ugvg6.needle.run/" class="button" target="_blank" rel="noopener">
+        <a href="https://surgiscope-1znkpvz2ugvg6-z2ugvg6.needle.run/" class="button online-demo-link" target="_blank" rel="noopener">
           <i class="fas fa-cloud"></i> Online
         </a>
+        <style>
+          @media only screen and (max-width: 900px) and (pointer: coarse) {
+            /* Hide on most mobile devices */
+            .online-demo-link {
+              display: none !important;
+            }
+          }
+        </style>
+        <script>
+          // Extra check for iOS/Android user agents (in case of tablets or edge cases)
+          (function() {
+            var ua = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android|iphone|ipad|ipod/i.test(ua)) {
+              var el = document.querySelector('.online-demo-link');
+              if (el) el.style.display = 'none';
+            }
+          })();
+        </script>
         <span style="
           visibility: hidden;
           background: #222;
