@@ -22,7 +22,14 @@
     <nav>
       <a href="index.html" class="hover-effect active">Home</a>
       <a href="paper.html" class="hover-effect">Paper</a>
-      <a href="https://www.surgicalproficiency.ch/" class="hover-effect" target="_blank" rel="noopener">PROFICIENCY</a>
+      <a href="https://www.surgicalproficiency.ch/" class="hover-effect proficiency-link" target="_blank" rel="noopener">PROFICIENCY</a>
+      <style>
+        @media (max-width: 385px) {
+          .proficiency-link {
+        display: none !important;
+          }
+        }
+      </style>
     </nav>
     <style>
       .hover-effect {
@@ -63,11 +70,13 @@
 
     <div class="buttons" style="padding-top: 30px; text-align: center;">
       <span style="position: relative; display: inline-block;">
-        <a href="https://surgiscope-1znkpvz2ugvg6-z2ugvg6.needle.run/" class="button online-demo-link" target="_blank" rel="noopener">
+        <a href="https://surgiscope-1znkpvz2ugvg6-z2ugvg6.needle.run/" class="button online-demo-link" target="_blank"
+          rel="noopener">
           <i class="fas fa-cloud"></i> Online
         </a>
         <style>
           @media only screen and (max-width: 900px) and (pointer: coarse) {
+
             /* Hide on most mobile devices */
             .online-demo-link {
               display: none !important;
@@ -76,7 +85,7 @@
         </style>
         <script>
           // Extra check for iOS/Android user agents (in case of tablets or edge cases)
-          (function() {
+          (function () {
             var ua = navigator.userAgent || navigator.vendor || window.opera;
             if (/android|iphone|ipad|ipod/i.test(ua)) {
               var el = document.querySelector('.online-demo-link');
@@ -120,13 +129,15 @@
           }
         });
       </script>
-      <a href="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Exports/Windows/SurgiScope.exe" target="_blank" class="button"><i
-          class="fab fa-windows"></i> Windows</a>
-      <a href="http://xr.engineering.zhaw.ch/SurgiScope/Version1/Exports/Mac/SurgiScope.zip" target="_blank" class="button"><i
-          class="fab fa-apple"></i> Mac</a>
-            <a href="http://xr.engineering.zhaw.ch/SurgiScope/Version1/Exports/Linux/SurgiScope.zip" target="_blank" class="button"><i
-          class="fab fa-linux"></i> Linux</a>
-      <a href="paper.html" class="button" style="background: #fff; color: #007bff; border: 0px solid #007bff; box-shadow: 0 2px 8px rgba(0,0,0,0.10);"><i class="fas fa-file-alt"></i> Paper</a>
+      <a href="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Exports/Windows/SurgiScope.exe" target="_blank"
+        class="button"><i class="fab fa-windows"></i> Windows</a>
+      <a href="http://xr.engineering.zhaw.ch/SurgiScope/Version1/Exports/Mac/SurgiScope.zip" target="_blank"
+        class="button"><i class="fab fa-apple"></i> Mac</a>
+      <a href="http://xr.engineering.zhaw.ch/SurgiScope/Version1/Exports/Linux/SurgiScope.zip" target="_blank"
+        class="button"><i class="fab fa-linux"></i> Linux</a>
+      <a href="paper.html" class="button"
+        style="background: #fff; color: #007bff; border: 0px solid #007bff; box-shadow: 0 2px 8px rgba(0,0,0,0.10);"><i
+          class="fas fa-file-alt"></i> Paper</a>
     </div>
   </div>
 
@@ -160,32 +171,28 @@
       <table style="width: 100%; text-align: left; border-spacing: 20px 0;">
         <tr>
           <td>
-            <img
-              src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/Video.gif"
-              alt="Tutorial" style="border-radius: 12px;" />
+            <img src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/Video.gif" alt="Tutorial"
+              style="border-radius: 12px;" />
             <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Video:</b> Watch real surgical footage
               with a timeline highlighting key steps of the procedure.</p>
           </td>
           <td>
-            <img
-              src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/Tools.gif"
-              alt="Target Tool and Bone" style="border-radius: 12px;" />
+            <img src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/Tools.gif" alt="Target Tool and Bone"
+              style="border-radius: 12px;" />
             <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Tools:</b> Hover to highlight and
               explore surgical instruments in 3D.</p>
           </td>
         </tr>
         <tr>
           <td>
-            <img
-              src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/BonesAndImplant.gif"
+            <img src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/BonesAndImplant.gif"
               alt="Gaussian Splatting" style="border-radius: 12px;" />
             <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Interactive Visualization:</b> A 3D
               model with navigable and toggleable anatomical structures.</p>
           </td>
           <td>
-            <img
-              src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/Evaluation.gif"
-              alt="Fly Over" style="border-radius: 12px;" />
+            <img src="https://xr.engineering.zhaw.ch/SurgiScope/Version1/Images/Evaluation.gif" alt="Fly Over"
+              style="border-radius: 12px;" />
             <p style="background: #f7f7f7; padding: 10px; border-radius: 8px;"><b>Evaluation:</b> Test your knowledge
               through interactive assessments.
             </p>
@@ -213,8 +220,8 @@
 
   <section>
     <h2>The PROFICIENCY project is financially supported by:</h2>
-    <div class="logo logo-small">
-      <img src="images/Innosuisse.avif" style="max-width: 450px; display: block; margin: 0 auto;" alt="Innosuisse" />
+    <div class="logo logo-small" style="display: flex; justify-content: center; align-items: center;">
+      <img src="images/Innosuisse.avif" style="max-width: 300px; display: block; margin: 0 auto;" alt="Innosuisse" />
     </div>
   </section>
 
